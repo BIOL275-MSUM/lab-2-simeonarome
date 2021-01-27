@@ -6,20 +6,20 @@
 #   2. Edit the code to complete the self assessment
 #   3. Copy chunks of the final code to your R Markdown document calculator.Rmd
 
-k <- c(1, 2, 10, 4.7, 5.0)
-k
+x <- c(1, 2, 10, 4.7, 5.0)
+x
 
-length(k)  # sample size
-median(k)  # median value
-mean(k)    # mean value
-sd(k)      # standard deviation
+length(x)  # sample size
+median(x)  # median value
+mean(x)    # mean value
+sd(x)      # standard deviation
 
-n <- length(k) # sample size
+n <- length(x) # sample size
 n
 
-sem <- sd(k) / sqrt(n) # standard error of the mean
+sem <- sd(x) / sqrt(n) # standard error of the mean
 sem
 
-mean(k) + 1.96 * sem                             # upper limit
-mean(k) - 1.96 * sem                             # lower limit
-c(mean(k) + 1.96 * sem, mean(k) - 1.96 * sem)    # both limits combined
+mean(x) + 1.96 * sem                             # upper limit
+mean(x) - 1.96 * sem                             # lower limit
+c(mean(x) + 1.96 * sem, mean(x) - 1.96 * sem)    # both limits combined

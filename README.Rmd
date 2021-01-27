@@ -1,11 +1,10 @@
 ---
 title: "Lab 2: Introduction to RStudio"
-author: "___"
+author: "SIMEON ALFA"
 date: "`r format(Sys.Date())`"
 output: github_document
 ---
 
-> INSTRUCTIONS: REMOVE THIS LINE AND REPLACE ____ WITH YOUR OWN TEXT
 
 Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
 
@@ -13,15 +12,21 @@ Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
 
 The objectives of this lab are:
 
-- ___
-- ___
+- Use the console and source windows in RStudio
+- Write and run code in an R script
+- Document your R code with comments
+- Transfer code from an R script to an R Markdown document
+- Craft a narrative combining text explanation, code, and graphs
+- Collaborate on Issues in GitHub
+- Conduct peer review of an assignment
+
 
 ## Repository contents
 
 The repository contains the following scripts:
 
 - [calculator.R](calculator.R)
-- [calculator.Rmd](calculator.Rmd)
+- [Lab 2 assignment](assignment_lab-2.md)
 
 ## Instructions for knitting
 

@@ -1,6 +1,6 @@
 ---
 title: "Lab 2 Assignment"
-author: "___"
+author: "_SIMEON ALFA__"
 date: "`r format(Sys.Date())`"
 output: github_document
 ---
@@ -19,25 +19,38 @@ The final section of the Lab 2 instructions asks me to imagine I have collected 
 
 First, I combine the values into a vector using the `c()` function, assign it to a variable named `x`, and print `x`
 
-```{r vector}
-
+```{r}
+x <- c(6.05, 4.89, 3.32, 4.93, 5.25, 5.04, 4.91, 2.84, 5.60, 5.34)
+x
 ```
-
 Here I calculate the sample size, mean, median, and standard deviation:
 
-```{r stats}
+```{r}
+length(x)  # sample size
+median(x)  # median value
+mean(x)    # mean value
+sd(x)      # standard deviation
 
 ```
+
 
 The standard error of the mean can be calculated by dividing the standard deviation by the square root of the sample size:
 
-```{r se}
+```{r}
+n <- length(x) # sample size
+n
+
+sem <- sd(x) / sqrt(n) # standard error of the mean
+sem
 
 ```
 
-And finally, I can see the 95% confidence interval ranges from a minimum of ___ to a maximum of ___
+And finally, I can see the 95% confidence interval ranges from a minimum of 4.2 to a maximum of 5.4
 
 ```{r mean}
+mean(x) + 1.96 * sem                             # upper limit
+mean(x) - 1.96 * sem                             # lower limit
+c(mean(x) + 1.96 * sem, mean(x) - 1.96 * sem)    # both limits combined
 
 ```
 
